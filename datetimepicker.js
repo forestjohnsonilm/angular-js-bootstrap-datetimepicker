@@ -1,7 +1,7 @@
 angular.module('ui.bootstrap.datetimepicker',
     ["ui.bootstrap.dateparser", "ui.bootstrap.datepicker", "ui.bootstrap.timepicker"]
   )
-  .directive('datepickerPopup', function (){
+  .directive('zhDatepickerPopup', function (){
    return {
     restrict: 'EAC',
     require: 'ngModel',
@@ -98,7 +98,7 @@ angular.module('ui.bootstrap.datetimepicker',
               ["datepickerOptions", "dateOptions"]
           ].reduce(createAttrConcat, '') +
             createFuncAttr("dateDisabled", "date: date, mode: mode") +
-            createEvalAttr("datepickerPopup", "dateFormat") +
+            createEvalAttr("zhDatepickerPopup", "dateFormat") +
             createEvalAttr("placeholder", "placeholder") +
             "/>\n" +
             "</div>\n" +
